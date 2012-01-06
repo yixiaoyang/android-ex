@@ -1,1 +1,15 @@
-hello,android!
+#--------------------------------------------------------
+# xiaoyang yi
+# 2012-1-6 modify on github
+# This is my Android experience demo folder.
+#--------------------------------------------------------
+
+(1)using git
+利用 git-pull 与 git-push 命令,项目开发流程大致如下:
+$ git clone lyr@192.168.0.7:~/work/m2ge
+$ git add 改动的文件
+$ git commit
+$ git pull ... 解决版本合并问题 ...
+$ git push
+
+(2)
