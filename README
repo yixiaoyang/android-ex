@@ -12,3 +12,5 @@ $ git commit
 $ git pull ... 解决版本合并问题 ...
 $ git push
 
+(2)history
+see log in git-hub
