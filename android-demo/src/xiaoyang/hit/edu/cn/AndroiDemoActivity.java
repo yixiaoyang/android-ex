@@ -67,6 +67,5 @@ public class AndroiDemoActivity extends Activity  {
         bnt1.setOnClickListener(ls);
         bnt2.setOnClickListener(ls);
         bnt3.setOnClickListener(ls);
-       
     }
 }
