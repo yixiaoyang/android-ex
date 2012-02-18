@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="right" >
+
+    <ImageView
+    	android:id="@+id/imageViewFicon"
+    	android:layout_width="40dip"
+    	android:layout_height="40dip"
+    	android:layout_alignBottom="@+id/textViewFsize"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true"
+    	android:layout_toLeftOf="@+id/textViewFsize"
+    	android:paddingTop="10dip"
+    	android:src="@drawable/toolbar_home" />
+
+    <TextView
+    	android:id="@+id/textViewFtitle"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="10dip"
+    	android:textSize="18dip"
+    	android:layout_weight="2.0"
+    	android:layout_marginLeft="50dp"
+    	android:text="File Tittle" />
+
+    <TextView
+    	android:id="@+id/textViewFsize"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignLeft="@+id/textViewFtitle"
+    	android:layout_below="@+id/textViewFtitle"
+    	android:layout_weight="1.0"
+    	android:paddingBottom="0dip"
+    	android:paddingRight="10dip"
+    	android:text="11.1kb"
+    	android:textSize="10dip" />
+
+</RelativeLayout>
