@@ -4,5 +4,76 @@
 	android:layout_height="fill_parent"
 	android:orientation="vertical" >
 
+	<LinearLayout
+		android:id="@+id/toolbarLinearLayout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:orientation="horizontal" >
+
+		<ImageButton
+			android:id="@+id/imageButtonHome"
+			android:layout_width="60dip"
+			android:layout_height="60dip"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="0dip"
+			android:layout_weight="1"
+			android:src="@drawable/toolbar_home" />
+
+		<ImageButton
+			android:id="@+id/imageButtonGridview"
+			android:layout_width="60dip"
+			android:layout_height="60dip"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="0dip"
+			android:layout_weight="1"
+			android:src="@drawable/toolbar_icon" />
+
+		<ImageButton
+			android:id="@+id/imageButtonSearch"
+			android:layout_width="60dip"
+			android:layout_height="60dip"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="0dip"
+			android:layout_weight="1"
+			android:src="@drawable/toolbar_search" />
+
+		<ImageButton
+			android:id="@+id/imageButtonUplevel"
+			android:layout_width="60dip"
+			android:layout_height="60dip"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="0dip"
+			android:layout_weight="1"
+			android:src="@drawable/toolbar_uplevel" />
+
+		<ImageButton
+			android:id="@+id/imageButtonOperation"
+			android:layout_width="60dip"
+			android:layout_height="60dip"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="0dip"
+			android:layout_weight="1"
+			android:src="@drawable/toolbar_operation" />
+
+		<ImageButton
+			android:id="@+id/imageButtonSetting"
+			android:layout_width="60dip"
+			android:layout_height="60dip"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="0dip"
+			android:layout_weight="1"
+			android:src="@drawable/toolbar_settings" />
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/fileList"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/toolbarLinearLayout"
+		android:layout_centerHorizontal="true" >
+
+	</ListView>
 
 </RelativeLayout>

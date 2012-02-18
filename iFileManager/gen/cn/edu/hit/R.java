@@ -26,23 +26,53 @@ public final class R {
         public static final int splash2=0x7f02000c;
         public static final int splash3=0x7f02000d;
         public static final int splash4=0x7f02000e;
+        public static final int toolbar_background=0x7f02000f;
+        public static final int toolbar_favorite=0x7f020010;
+        public static final int toolbar_home=0x7f020011;
+        public static final int toolbar_icon=0x7f020012;
+        public static final int toolbar_list=0x7f020013;
+        public static final int toolbar_manager=0x7f020014;
+        public static final int toolbar_mode_icon=0x7f020015;
+        public static final int toolbar_mode_list=0x7f020016;
+        public static final int toolbar_new=0x7f020017;
+        public static final int toolbar_operation=0x7f020018;
+        public static final int toolbar_search=0x7f020019;
+        public static final int toolbar_select=0x7f02001a;
+        public static final int toolbar_select_focus=0x7f02001b;
+        public static final int toolbar_settings=0x7f02001c;
+        public static final int toolbar_sort=0x7f02001d;
+        public static final int toolbar_star=0x7f02001e;
+        public static final int toolbar_taskmanager=0x7f02001f;
+        public static final int toolbar_uninstall=0x7f020020;
+        public static final int toolbar_uplevel=0x7f020021;
     }
     public static final class id {
-        public static final int imageView1=0x7f060000;
-        public static final int itemAbout=0x7f060003;
-        public static final int itemExit=0x7f060004;
-        public static final int itemNew=0x7f060001;
-        public static final int itemsetting=0x7f060002;
+        public static final int fileList=0x7f06000a;
+        public static final int imageButtonGridview=0x7f060005;
+        public static final int imageButtonHome=0x7f060004;
+        public static final int imageButtonOperation=0x7f060008;
+        public static final int imageButtonSearch=0x7f060006;
+        public static final int imageButtonSetting=0x7f060009;
+        public static final int imageButtonUplevel=0x7f060007;
+        public static final int imageView1=0x7f06000b;
+        public static final int imageViewFicon=0x7f060000;
+        public static final int itemAbout=0x7f06000e;
+        public static final int itemExit=0x7f06000f;
+        public static final int itemNew=0x7f06000c;
+        public static final int itemsetting=0x7f06000d;
+        public static final int textViewFsize=0x7f060001;
+        public static final int textViewFtitle=0x7f060002;
+        public static final int toolbarLinearLayout=0x7f060003;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int splash=0x7f030001;
+        public static final int filelist_item=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int splash=0x7f030002;
     }
     public static final class menu {
         public static final int menu=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int hello=0x7f040000;
+        public static final int app_name=0x7f040000;
     }
 }
