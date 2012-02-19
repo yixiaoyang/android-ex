@@ -60,7 +60,7 @@ public class IFileManagerActivity extends ListActivity implements
 		try {
 			process = Runtime.getRuntime().exec("su");
 			process.waitFor();
-			if_root = true;
+			//if_root = true;
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -209,19 +209,11 @@ public class IFileManagerActivity extends ListActivity implements
 		} catch (NullPointerException e) {
 			return;
 		}
-
+		
+		String fpath = currentDirctory+"/"+files.get(position).getName();
 		/* system file */
 		if (!if_root) {
-			new AlertDialog.Builder(this)
-			.setTitle("提示")
-			.setMessage(currentDirctory+"/"+file.getName())
-			.setPositiveButton("关闭",
-					new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface di,
-								int ii) {
-						}
-					}).show();
-			if (SystemFilesList.ifSysFile(currentDirctory+file.getName())) {
+			if (SystemFilesList.ifSysFile(fpath)) {
 				new AlertDialog.Builder(this)
 						.setTitle("提示")
 						.setMessage("抱歉，您没有权限访问系统文件！")
@@ -234,28 +226,7 @@ public class IFileManagerActivity extends ListActivity implements
 				return;
 			}
 		}
-
-		if (file.isDirectory()) {
-			scanFile(file.getPath());
-
-			currentDirctory = file.getPath();
-			this.setTitle(currentDirctory);
-		} else {
-			// openFile(file);
-		}
-		// onListItemClick2(l,v,position, id);
-	}
-
-	/* setting actions when ListItem pressed */
-	// @Override
-	public void onListItemClick2(ListView l, View v, int position, long id) {
-		File file;
-		try {
-			file = new File(files.get(position).getPath());
-		} catch (NullPointerException e) {
-			return;
-		}
-
+		
 		if (file.isDirectory()) {
 			scanFile(file.getPath());
 
@@ -265,6 +236,7 @@ public class IFileManagerActivity extends ListActivity implements
 			// openFile(file);
 		}
 	}
+
 
 	/*
 	 * setting uplevel actions and override onKeyDown(int keyCoder,KeyEvent
